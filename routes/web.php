@@ -3,7 +3,10 @@
 use App\Http\Controllers\BalitaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\IbuHamilController;
+use App\Http\Controllers\ImunisasiController;
+use App\Http\Controllers\KematianController;
 use App\Http\Controllers\PenimbanganController;
+use App\Http\Controllers\VitaminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +40,12 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('ibu-hamil/hapus/{id}', [IbuHamilController::class, 'destroy'])->name('ibu-hamil-hapus');
 
     Route::resource('penimbangan', PenimbanganController::class);
+
+    Route::resource('imunisasi', ImunisasiController::class);
+
+    Route::resource('vitamin', VitaminController::class);
+
+    Route::resource('kematian', KematianController::class);
 });
 
 

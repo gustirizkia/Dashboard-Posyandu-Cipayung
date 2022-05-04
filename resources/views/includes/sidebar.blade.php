@@ -40,18 +40,21 @@
                         <span>Data Penimbangan</span>
                     </a>
                 </li>
-                <li class="sidebar-item ">
-                    <a href="index.html" class='sidebar-link'>
+                <li class="sidebar-item {{ (request()->is('admin/imunisasi*'))
+                        ? 'active' : '' }}">
+                    <a href="{{ route('imunisasi.index') }}" class='sidebar-link'>
                         <span>Data Imunisasi</span>
                     </a>
                 </li>
-                <li class="sidebar-item ">
-                    <a href="index.html" class='sidebar-link'>
+                <li class="sidebar-item {{ (request()->is('admin/vitamin*'))
+                        ? 'active' : '' }}">
+                    <a href="{{ route('vitamin.index') }}" class='sidebar-link'>
                         <span>Data Vitamin</span>
                     </a>
                 </li>
-                <li class="sidebar-item ">
-                    <a href="index.html" class='sidebar-link'>
+                <li class="sidebar-item {{ (request()->is('admin/kematian*'))
+                        ? 'active' : '' }}">
+                    <a href="{{ route('kematian.index') }}" class='sidebar-link'>
                         <span>Data Kematian</span>
                     </a>
                 </li>

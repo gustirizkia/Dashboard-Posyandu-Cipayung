@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Vitamin extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
+
+    public function anak(){
+        return $this->belongsTo('App\Models\Balita', 'id_anak');
+    }
 }

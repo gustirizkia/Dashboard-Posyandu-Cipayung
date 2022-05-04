@@ -17,7 +17,7 @@ class CreateVitaminsTable extends Migration
             $table->id();
             $table->integer('id_anak');
             $table->integer('usia');
-            $table->string('jenis_kelamin');
+            $table->string('jenis_vitamin');
             $table->date('tgl');
             $table->timestamps();
         });
