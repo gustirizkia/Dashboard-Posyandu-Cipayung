@@ -21,22 +21,21 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
 
-            'email' => [
+            'no_id' => [
                 'required',
                 'string',
-                'email',
                 'max:255',
                 Rule::unique('users')->ignore($user->id),
             ],
         ])->validateWithBag('updateProfileInformation');
 
-        if ($input['email'] !== $user->email &&
+        if ($input['no_id'] !== $user->no_id &&
             $user instanceof MustVerifyEmail) {
             $this->updateVerifiedUser($user, $input);
         } else {
             $user->forceFill([
                 'name' => $input['name'],
-                'email' => $input['email'],
+                'no_id' => $input['no_id'],
             ])->save();
         }
     }

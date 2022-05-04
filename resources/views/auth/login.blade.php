@@ -1,7 +1,15 @@
 @extends('layouts.auth', ['title' => 'Posyandu - Login'])
 
 @section('content')
-
+@if ($errors->any())
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
 <div class="col-md-4">
     <div class="card border-0 shadow rounded">
         <div class="card-body">

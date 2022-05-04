@@ -46,9 +46,9 @@ return [
     |
     */
 
-    'username' => 'email',
+    'username' => 'no_id',
 
-    'email' => 'email',
+    'no_id' => 'no_id',
 
     /*
     |--------------------------------------------------------------------------
@@ -102,10 +102,10 @@ return [
     |
     */
 
-    'limiters' => [
-        'login' => 'login',
-        'two-factor' => 'two-factor',
-    ],
+    // 'limiters' => [
+    //     'login' => 'login',
+    //     'two-factor' => 'two-factor',
+    // ],
 
     /*
     |--------------------------------------------------------------------------

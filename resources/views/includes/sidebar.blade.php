@@ -60,6 +60,14 @@
                         <span>Laporan</span>
                     </a>
                 </li>
+                <li class="sidebar-item ">
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button class='sidebar-link btn btn-link btn-block'>
+                            <span>Keluar</span>
+                        </button>
+                    </form>
+                </li>
             </ul>
         </div>
         <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
