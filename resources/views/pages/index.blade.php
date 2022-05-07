@@ -1,5 +1,9 @@
 @extends('layouts.dashboard')
 
+@section('title')
+Modernisasi Posyandu, Keluarga Berkualitas, Posyandu Sahabat Masyarakat.
+@endsection
+
 @section('content')
 <div class="row">
 

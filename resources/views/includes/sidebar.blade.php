@@ -58,8 +58,9 @@
                         <span>Data Kematian</span>
                     </a>
                 </li>
-                <li class="sidebar-item ">
-                    <a href="index.html" class='sidebar-link'>
+                <li class="sidebar-item {{ (request()->is('admin/laporan*'))
+                        ? 'active' : '' }}">
+                    <a href="{{ route('laporan') }}" class='sidebar-link'>
                         <span>Laporan</span>
                     </a>
                 </li>

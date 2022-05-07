@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\IbuHamilController;
 use App\Http\Controllers\ImunisasiController;
 use App\Http\Controllers\KematianController;
+use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\PenimbanganController;
 use App\Http\Controllers\VitaminController;
 use Illuminate\Support\Facades\Route;
@@ -49,6 +50,13 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::resource('vitamin', VitaminController::class);
 
     Route::resource('kematian', KematianController::class);
+
+    Route::get('laporan', [LaporanController::class, 'index'])->name('laporan');
+    Route::get('laporan/balita-print', [LaporanController::class, 'balitaPrint'])->name('laporan-balita');
+    Route::get('laporan/ibu-hamil-print', [LaporanController::class, 'ibuHamilPrint'])->name('laporan-ibu-hamil');
+    Route::get('laporan/kematian-print', [LaporanController::class, 'kematianPrint'])->name('laporan-kematian');
+    Route::get('laporan/imunisasi-print', [LaporanController::class, 'imunisasiPrint'])->name('laporan-imunisasi');
+    Route::get('laporan/vitamin-print', [LaporanController::class, 'vitaminPrint'])->name('laporan-vitamin');
 });
 
 
