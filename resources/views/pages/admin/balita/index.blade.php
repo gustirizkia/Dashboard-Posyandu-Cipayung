@@ -43,10 +43,10 @@
                     <td>{{ $item->jenis_kelamin }}</td>
                     <td>{{ \Carbon\Carbon::parse($item->tanggal_lahir)->translatedFormat('l, d F Y') }}</td>
                     <td class="text-left">
-                        <a href="" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="{{ route('balita-edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
                         <a href="{{ route('balita-destroy', $item->id) }}"
                             onclick="return confirm('Yakin hapus data ini ?')" class="btn btn-danger btn-sm">Hapus</a>
-                        <a href="" class="btn btn-info btn-sm">Lihat</a>
+                        <a href="{{ route('balita-show', $item->id) }}" class="btn btn-info btn-sm">Lihat</a>
                     </td>
                 </tr>
                 @php

@@ -27,9 +27,12 @@ Route::get('/', function () {
 Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('/', [DashboardController::class, 'index']);
     Route::get('balita', [BalitaController::class, 'index'])->name('balita-index');
+    Route::get('balita/detail/{id}', [BalitaController::class, 'show'])->name('balita-show');
     Route::get('balita/hapus/{id}', [BalitaController::class, 'destroy'])->name('balita-destroy');
     Route::get('balita/tambah-data', [BalitaController::class, 'tambah'])->name('balita-tambah-data');
     Route::post('balita/tambah-data', [BalitaController::class, 'store'])->name('balita-tambah-store');
+    Route::get('balita/{id}/edit', [BalitaController::class, 'edit'])->name('balita-edit');
+    Route::post('balita/{id}/update', [BalitaController::class, 'update'])->name('balita-update');
 
     Route::get('ibu-hamil', [IbuHamilController::class, 'index'])->name('ibu-hamil-index');
     Route::get('ibu-hamil/detail/{id}', [IbuHamilController::class, 'show'])->name('ibu-hamil-detail');

@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('title')
-Edit Data
+Tambah Data
 @endsection
 
 @section('content')
@@ -22,7 +22,7 @@ Edit Data
                     <label for="">Jenis Kelamin</label>
                     <select name="jenis_kelamin" id="" class="form-select">
                         <option value="Laki-laki">Laki-laki</option>
-                        <option value="Laki-laki">Prempuan</option>
+                        <option value="Prempuan">Prempuan</option>
                     </select>
                 </div>
                 <div class="col-md-4">

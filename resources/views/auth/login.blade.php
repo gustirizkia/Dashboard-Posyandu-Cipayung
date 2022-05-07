@@ -1,15 +1,7 @@
 @extends('layouts.auth', ['title' => 'Posyandu - Login'])
 
 @section('content')
-@if ($errors->any())
-<div class="alert alert-danger">
-    <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-</div>
-@endif
+
 <div class="col-md-4">
     <div class="card border-0 shadow rounded">
         <div class="card-body">
@@ -18,7 +10,8 @@
                 {{ session('status') }}
             </div>
             @endif
-            <h4 class="font-weight-bold">LOGIN</h4>
+           
+            <h5 class="font-weight-bold">Sistem Informasi Posyandu Pepaya Cipayung</h5>
             <hr>
             <form action="{{ route('login') }}" method="POST">
                 @csrf
