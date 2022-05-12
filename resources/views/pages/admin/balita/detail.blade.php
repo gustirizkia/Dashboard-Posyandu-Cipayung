@@ -22,11 +22,19 @@ Detail Data
                 </div>
                 <hr>
             </div>
+
             <div class="col-md-4">
                 <label for="">Tanggal Lahir</label>
                 <div>
                     <strong>{{ \Carbon\Carbon::parse($item->tanggal_lahir)->translatedFormat('l, d F Y') }}
                     </strong>
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-4">
+                <label for="">Umur</label>
+                <div>
+                    <strong>{{ $item->umur }} Tahun</strong>
                 </div>
                 <hr>
             </div>
