@@ -20,7 +20,7 @@ Tambah Data
                 </div>
                 <div class="col-md-4">
                     <label for="">Umur</label>
-                    <input required type="date" class="form-control" name="umur">
+                    <input required type="number" class="form-control" name="umur">
                 </div>
                 <div class="col-md-4">
                     <label for="">Jenis Kelamin</label>
