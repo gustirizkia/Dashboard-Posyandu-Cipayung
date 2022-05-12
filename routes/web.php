@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 Route::prefix('admin')->middleware('admin')->group(function () {
@@ -57,6 +57,7 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('laporan/kematian-print', [LaporanController::class, 'kematianPrint'])->name('laporan-kematian');
     Route::get('laporan/imunisasi-print', [LaporanController::class, 'imunisasiPrint'])->name('laporan-imunisasi');
     Route::get('laporan/vitamin-print', [LaporanController::class, 'vitaminPrint'])->name('laporan-vitamin');
+    Route::get('laporan/penimbangan-print', [LaporanController::class, 'penimbanganPrint'])->name('laporan-penimbangan');
 });
 
 

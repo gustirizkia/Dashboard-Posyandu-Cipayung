@@ -54,5 +54,14 @@ Laporan Data Posyandu Pepaya Cipayung
             </div>
         </div>
     </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="text-muted font-semibold">Jumlah Data Penimbangan</h6>
+                <h6 class="font-extrabold">{{ $penimbangan }}</h6>
+                <a href="{{ route('laporan-penimbangan') }}" class="mb-0 text-primary">Print</a>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection

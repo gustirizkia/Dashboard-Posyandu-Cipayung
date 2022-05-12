@@ -47,21 +47,21 @@ Detail Data
             <div class="col-md-4">
                 <label for="">Tinggi Badan</label>
                 <div>
-                    <strong>{{ $item->tinggi_badan }}</strong>
+                    <strong>{{ $item->tinggi_badan }} Cm</strong>
                 </div>
                 <hr>
             </div>
             <div class="col-md-4">
                 <label for="">Berat Badan</label>
                 <div>
-                    <strong>{{ $item->berat_badan }}</strong>
+                    <strong>{{ $item->berat_badan }} Kg</strong>
                 </div>
                 <hr>
             </div>
             <div class="col-md-4">
                 <label for="">Lingkar Kepala</label>
                 <div>
-                    <strong>{{ $item->lingkar_kepala }}</strong>
+                    <strong>{{ $item->lingkar_kepala }} Cm</strong>
                 </div>
                 <hr>
             </div>

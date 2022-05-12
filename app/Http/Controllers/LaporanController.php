@@ -94,4 +94,16 @@ class LaporanController extends Controller
         return $pdf->stream();
          return $pdf->download('laporan data imunisasi - '.$date.'.pdf');
     }
+    public function penimbanganPrint(){
+       $data = Penimbangan::with('anak')->orderBy('id', 'desc')->get();
+
+       $date = Carbon::now()->format('d-y-m');
+        $pdf = PDF::loadView('pages.admin.laporan.penimbangan', [
+            'items' => $data,
+            'date' => $date
+        ]);
+
+        return $pdf->stream();
+         return $pdf->download('laporan data imunisasi - '.$date.'.pdf');
+    }
 }

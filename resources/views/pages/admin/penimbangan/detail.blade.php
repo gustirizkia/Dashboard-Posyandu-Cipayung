@@ -33,14 +33,14 @@ Detail Data
             <div class="col-md-4">
                 <label for="">Berat Badan</label>
                 <div>
-                    <strong>{{ $item->berat_badan }}</strong>
+                    <strong>{{ $item->berat_badan }} Kg</strong>
                 </div>
                 <hr>
             </div>
             <div class="col-md-4">
                 <label for="">Lingkar Perut</label>
                 <div>
-                    <strong>{{ $item->lingkar_perut}}</strong>
+                    <strong>{{ $item->lingkar_perut}} Cm</strong>
                 </div>
                 <hr>
             </div>

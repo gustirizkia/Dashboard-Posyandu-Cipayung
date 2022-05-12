@@ -31,8 +31,8 @@
             <tr>
                 <th scope="row">{{ $no }}</th>
                 <td>{{ $item->id }}</td>
-                <td>{{ $item->anak->nama_anak }}</td>
-                <td>{{ $item->usia }}</td>
+                <td>{{ $item->anak->nama_anak }} Tahun</td>
+                <td>{{ $item->usia }} Tahun</td>
                 <td>{{ \Carbon\Carbon::parse($item->tgl_kematian)->translatedFormat('l, d F Y') }}</td>
 
             </tr>

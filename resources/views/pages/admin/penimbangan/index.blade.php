@@ -47,9 +47,9 @@
                         <td>{{ $item->anak->nama_anak }}</td>
                         {{-- <td>{{ $item->alamat }}</td> --}}
                         <td>{{ \Carbon\Carbon::parse($item->tanggal_penimbangan)->translatedFormat('l, d F Y') }}</td>
-                        <td>{{ $item->usia }}</td>
-                        <td>{{ $item->berat_badan }}</td>
-                        <td>{{ $item->lingkar_perut }}</td>
+                        <td>{{ $item->usia }} Tahun</td>
+                        <td>{{ $item->berat_badan }} Kg</td>
+                        <td>{{ $item->lingkar_perut }} Cm</td>
                         <td>{{ $item->saran }}</td>
                         <td class="text-left d-flex justify-content-between" style="">
                             <a href="{{ route('penimbangan.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
