@@ -24,6 +24,7 @@ class CreateBalitasTable extends Migration
             $table->float('berat_badan');
             $table->bigInteger('lingkar_kepala');
             $table->longText('alamat');
+            $table->integer('umur');
             $table->timestamps();
         });
     }

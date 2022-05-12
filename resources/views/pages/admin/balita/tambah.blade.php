@@ -19,6 +19,10 @@ Tambah Data
                     <input required type="date" class="form-control" name="tanggal_lahir">
                 </div>
                 <div class="col-md-4">
+                    <label for="">Umur</label>
+                    <input required type="date" class="form-control" name="umur">
+                </div>
+                <div class="col-md-4">
                     <label for="">Jenis Kelamin</label>
                     <select name="jenis_kelamin" id="" class="form-select">
                         <option value="Laki-laki">Laki-laki</option>
