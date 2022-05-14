@@ -10,4 +10,8 @@ class Balita extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function kematian(){
+        return $this->hasMany('App\Models\Kematian', 'id_anak');
+    }
 }

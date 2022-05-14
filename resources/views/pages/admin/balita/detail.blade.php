@@ -32,7 +32,7 @@ Detail Data
                 <hr>
             </div>
             <div class="col-md-4">
-                <label for="">Umur</label>
+                <label for="">Usia</label>
                 <div>
                     <strong>{{ $item->umur }} Tahun</strong>
                 </div>
@@ -55,14 +55,16 @@ Detail Data
             <div class="col-md-4">
                 <label for="">Tinggi Badan</label>
                 <div>
-                    <strong>{{ $item->tinggi_badan }} Cm</strong>
+                    <strong>{{ $item->tinggi_badan }} Cm (Kondisi tinggi {{ $kondisi_tinggi }})</strong>
+                    <p>Ideal tinggi {{ $ideal_tinggi }}</p>
                 </div>
                 <hr>
             </div>
             <div class="col-md-4">
                 <label for="">Berat Badan</label>
                 <div>
-                    <strong>{{ $item->berat_badan }} Kg</strong>
+                    <strong>{{ $item->berat_badan }} Kg (Kondisi berat {{ $kondisi_berat_badan }})</strong>
+                    <p>Ideal berat {{ $ideal_berat }}</p>
                 </div>
                 <hr>
             </div>
@@ -83,4 +85,5 @@ Detail Data
         </div>
     </div>
 </div>
+
 @endsection

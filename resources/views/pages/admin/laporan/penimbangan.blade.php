@@ -42,6 +42,7 @@
                     <td>{{ $item->usia }} Tahun</td>
                     <td>{{ $item->berat_badan }} Kg</td>
                     <td>{{ $item->lingkar_perut }} Cm</td>
+                    <td>{{ $item->saran }}</td>
 
                 </tr>
                 @php
