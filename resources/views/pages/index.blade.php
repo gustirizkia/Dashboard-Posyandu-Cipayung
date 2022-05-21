@@ -113,7 +113,7 @@ Modernisasi Posyandu, Keluarga Berkualitas, Posyandu Sahabat Masyarakat.
     var myline = new Chart(line, {
     type: 'line',
     data: {
-    labels: labels,
+    labels: labels.sort(),
     datasets: [{
     label: 'Kelahiran',
     data: data,
