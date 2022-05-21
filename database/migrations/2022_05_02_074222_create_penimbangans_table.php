@@ -15,7 +15,7 @@ class CreatePenimbangansTable extends Migration
     {
         Schema::create('penimbangans', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_anak');
+            $table->foreignId('id_anak')->constrained('balitas');
             $table->date('tanggal_penimbangan');
             $table->bigInteger('usia');
             $table->integer('berat_badan');

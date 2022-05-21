@@ -15,7 +15,7 @@ class CreateImunisasisTable extends Migration
     {
         Schema::create('imunisasis', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_anak');
+            $table->foreignId('id_anak')->constrained('balitas');
             $table->string('jenis_imunisasi');
             $table->integer('usia');
             $table->date('tanggal_imunisasi');

@@ -15,7 +15,7 @@ class CreateKematiansTable extends Migration
     {
         Schema::create('kematians', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_anak');
+            $table->foreignId('id_anak')->constrained('balitas');
             $table->integer('usia');
             $table->date('tgl_kematian');
             $table->longText('ket');

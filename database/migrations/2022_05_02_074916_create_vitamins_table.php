@@ -15,7 +15,7 @@ class CreateVitaminsTable extends Migration
     {
         Schema::create('vitamins', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_anak');
+            $table->foreignId('id_anak')->constrained('balitas');
             $table->integer('usia');
             $table->string('jenis_vitamin');
             $table->date('tgl');
